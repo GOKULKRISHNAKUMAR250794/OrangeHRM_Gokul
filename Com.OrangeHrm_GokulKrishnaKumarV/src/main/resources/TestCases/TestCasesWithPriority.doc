@@ -1,0 +1,63 @@
+1. Login Module
+Scenario: Verify login functionality for different user roles (Admin, Employee).
+Test Cases:
+•	Valid username and password → Successful login
+•	Invalid username/password → Error message
+•	Empty fields → Error message
+•	Forgot Password link → Redirect to reset page
+Priority: High
+________________________________________
+2. Employee Management
+Scenario: Verify adding, updating, and deleting employee records.
+Test Cases:
+•	Add a new employee with valid details → Employee appears in list
+•	Add employee with missing mandatory fields → Validation error
+•	Edit existing employee details → Changes saved correctly
+•	Delete an employee → Employee removed from the list
+•	Search employee by ID, name, or role → Correct results displayed
+Priority: High
+________________________________________
+3. Leave Management
+Scenario: Verify leave application, approval, and leave balance.
+Test Cases:
+•	Apply for leave with valid dates → Request submitted
+•	Apply for leave exceeding balance → Validation error
+•	Manager approves/rejects leave → Status updated correctly
+•	Verify leave balance decreases after approval
+•	Cancel leave → Status updated and balance restored
+Priority: Medium-High
+________________________________________
+4. Timesheet / Attendance
+Scenario: Verify attendance marking and timesheet approval.
+Test Cases:
+•	Mark attendance → Status updated for the day
+•	Edit attendance (if allowed) → Changes saved correctly
+•	Manager approves timesheet → Status updated
+•	Generate attendance report → Data matches entries
+Priority: Medium
+________________________________________
+5. User Management / Roles
+Scenario: Verify role-based access control.
+Test Cases:
+•	Admin creates a new role → Role listed correctly
+•	Assign permissions to role → Permissions applied as expected
+•	User with role logs in → Access restricted as per permissions
+•	Edit/Delete role → Changes reflected properly
+Priority: Medium
+________________________________________
+6. Dashboard & Reports
+Scenario: Verify dashboard metrics and report generation.
+Test Cases:
+•	Verify dashboard displays key metrics (leaves, employees, performance)
+•	Generate employee report → Data accurate
+•	Export report to PDF/Excel → File generated successfully
+Priority: Medium
+________________________________________
+7. Profile & Settings
+Scenario: Verify user profile updates.
+Test Cases:
+•	Update personal info → Changes saved
+•	Change password → User can login with new password
+•	Upload profile picture → Image displays correctly
+Priority: Low-Medium
+
